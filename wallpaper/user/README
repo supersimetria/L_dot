@@ -1,0 +1,84 @@
+System_user:
+
+#Font
+ Unica One
+ Hex: 181818
+	"User_name"
+	Size: 96
+	X: -184
+	Y: 190
+	W: 323
+	H: 113
+		"Season_number"
+		Size: 96
+		X: 648
+		Y: 161
+		W: 215
+		H: 171
+#Background
+	Hex: C8555C
+	Resolution: 1920:1080
+++++++++++++++++++++++++++++++
+Work_user:
+
+#Font
+ Unica One
+ Hex: A0447C
+	"User_name"
+	Size: 96
+	X: -184
+	Y: 190
+	W: 323
+	H: 113
+		"Season_number"
+		Size: 96
+		X: 648
+		Y: 161
+		W: 215
+		H: 171
+#Background
+	Hex: A0447C
+	Resolution: 1920:1080
+++++++++++++++++++++++++++++++
+Genral_user:
+
+#Font
+ Unica One
+ Hex: A0447C
+	"User_name"
+	Size: 96
+	X: -184
+	Y: 190
+	W: 323
+	H: 113
+		"Season_number"
+		Size: 96
+		X: 648
+		Y: 161
+		W: 215
+		H: 171
+#Background
+	Hex: 9DBF51
+	Resolution: 1920:1080
+++++++++++++++++++++++++++++++
+Intro_user:
+
+#Font
+ Unica One
+ Hex: A0447C
+	"User_name"
+	Size: 96
+	X: -184
+	Y: 190
+	W: 323
+	H: 113
+		"Season_number"
+		Size: 96
+		X: 648
+		Y: 161
+		W: 215
+		H: 171
+#Background
+	Hex: CCCA56
+	Resolution: 1920:1080
+++++++++++++++++++++++++++++++

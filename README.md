@@ -11,3 +11,6 @@ mv ~/.zshrc ~/.zshrc-back
 wget -O ~/.zshrc https://git.io/JuaWC
 source ~/.zshrc
 ```
+```
+git clone https://github.com/supersimetria/L_dot.git
+```

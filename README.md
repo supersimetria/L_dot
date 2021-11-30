@@ -3,6 +3,30 @@
 ```
 git clone https://github.com/supersimetria/L_dot.git
 ```
+## Conky
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Bash
 ```
 mv ~/.bashrc ~/.bashrc-back

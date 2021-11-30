@@ -15,6 +15,20 @@ mv ~/.zshrc ~/.zshrc-back
 wget -O ~/.zshrc https://git.io/JuaWC
 source ~/.zshrc
 ```
+
+#Список всех пакетов
+pacman -Qqe >> ~/packages-all.txt
+
+#Список AUR пакетов
+pacman -Qmq >> ~/packages-aur.txt
+grep -v -F -f ~/packages-aur.txt ~/packages-all.txt  > ~/packages-pacman.txt; rm ~/packages-aur.txt ~/packages-all.txt
+
+
+
+
+
+
+
 #Cписок пакетов AUR/pacman с сохранением
 pacman -Qqet | grep -v "$(pacman -Qqg)" > ~/list_all_packages
 

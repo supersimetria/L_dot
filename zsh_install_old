@@ -1,0 +1,15 @@
+#!/bin/bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sed -i 's/plugins=(git)/plugins=(osx git npm rake sudo dotenv vagrant bundler composer web-search zsh-autosuggestions zsh-syntax-highlighting)/g' ~/.zshrc
+git clone https://github.com/powerline/fonts.git
+cp "$ZSH/themes/robbyrussell.zsh-theme" "$ZSH_CUSTOM/themes/robbyrussell.zsh-theme"
+echo '[*] replace "%c" with "%(4~|%-1~/…/%2~|%3~)" in "$ZSH_CUSTOM/themes/robbyrussell.zsh-theme"'
+cd fonts; ./install.sh; cd ..; rm -rf fonts; source ~/.zshrc
+#==================================================
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sed -i '11 s/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
+sed -i '73 s/plugins=(git)/plugins=(npm git npm osx rake sudo dotenv vagrant bundler composer web-search)/g' ~/.zshrc
+git clone https://github.com/powerline/fonts.git
+cd fonts; ./install.sh; cd ..; rm -rf fonts; source ~/.zshrc
